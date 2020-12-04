@@ -14,7 +14,7 @@ final class BladeHeroiconsServiceProvider extends ServiceProvider
         $this->callAfterResolving(Factory::class, function (Factory $factory) {
             $factory->add('heroicons', [
                 'path' => __DIR__.'/../resources/svg',
-                'prefix' => 'heroicon',
+                'prefix' => 'icon',
             ]);
         });
     }
